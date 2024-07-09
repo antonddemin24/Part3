@@ -1,0 +1,16 @@
+# fly.toml app configuration file generated for sparkling-wind-1344 on 2023-05-04T18:05:26+03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "sparkling-wind-1344"
+primary_region = "lhr"
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
